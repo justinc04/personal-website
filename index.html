@@ -1,19 +1,70 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My Personal Project</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Justin - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">Justin Chang</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1>Hi, I'm <span>Justin</span></h1>
+                <p>Web and Game Developer</p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+        </div>
+    </header>
 
-  <h1>Hello World!</h1>
-  
-  <p>This is my first web page!</p>
-  
-  <button onclick="changeText()">Click me!</button>
-  
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a Turing Scholar studying Computer Science and Mathematics at the University of Texas at Austin. I'm interested in software engineering, web development, and AI/ML. I have experience programming in several languages including Java and C++, as well as developing games with Unity.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3>Smart Cube Algorithm Trainer</h3>
+                    <p>A React web application to interface with smart Bluetooth Rubik's Cubes via the Chrome Bluetooth API. <br/> <br/> Technologies: React, TypeScript, Tailwind CSS</p>
+                </div>
+                <div class="project-item">
+                    <h3>Multiplayer First-Person Shooter Game </h3>
+                    <p>A networked multiplayer first-person shooter game with online lobbies using Photon Engine. <br/> <br/> Technologies: C#, Unity, Photon Engine
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Justin Chang. All Rights Reserved.</p>
+    </footer>
 </body>
-
 </html>
